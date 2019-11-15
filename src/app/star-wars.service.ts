@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { Movie } from './movies';
+import { Character } from './characters'
 
 
 @Injectable({
@@ -20,6 +21,17 @@ export class StarWarsService {
     )
     .pipe (
       map(
+        data => data ['results']
+      )
+    )
+  }
+
+  getStarWarsCharacters(): Observable<Character[]> {
+    return this.http.get<Character[]> (
+      this.starwarsUrl+ 'people/'
+    )
+    .pipe (
+      map( 
         data => data ['results']
       )
     )

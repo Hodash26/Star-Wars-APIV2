@@ -1,0 +1,11 @@
+div {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px white;
+    justify-content: center;
+}
+
+p {
+    width: 250px;
+}

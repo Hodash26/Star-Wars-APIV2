@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Movie } from '../movies'
 import { StarWarsService } from '../star-wars.service';
 
-
 @Component({
   selector: 'app-movie-details-component',
   templateUrl: './movie-details-component.component.html',

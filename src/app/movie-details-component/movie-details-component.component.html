@@ -1,11 +1,15 @@
 <div *ngIf="movie">
-  <p>{{ movie.title }}</p>
+  <p>Nom du film : {{ movie.title }}</p>
 
   <p>Numéro de l'episode : {{ movie.episode_id }}</p>
 
   <p>Date de sortie : {{ movie.release_date }}</p>
 
-  <p>Directeur : {{ movie.director }}</p>
+  <p>Réalisateur : {{ movie.director }}</p>
 
-  <p>{{ movie.opening_crawl }}</p>
+  <p>Texte d'ouverture : {{ movie.opening_crawl }}</p>
 </div>
+
+<!-- <div *ngIf="selectedPeople"> -->
+    <app-movie-characters-component [url]="movie.url" ></app-movie-characters-component>
+    <!-- </div> -->
