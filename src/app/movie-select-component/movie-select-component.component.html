@@ -1,0 +1,11 @@
+
+<form>
+  <select [(ngModel)]="selectValue" name="Starwarsmovie" id="Starwarsmovie">
+    <option *ngFor="let movie of movies" value="{{ movie.title }}">
+      Star Wars {{ movie.episode_id }} : {{ movie.title }}</option>
+  </select>
+</form>
+<button (click)="message()">OK</button>
+<!-- Je souhaite récupérer la valeur que je selectionne dans le option -->
+
+{{ print }}
