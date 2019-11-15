@@ -1,9 +1,11 @@
-<ul>
-    <li *ngFor="let movie of movies">
-        {{ movie.title }}
-        {{ movie.episode_id }}
-        {{ movie.release_date}}
-        {{ movie.director }}
-        {{ movie.opening_crawl}}
-    </li>
-</ul>
+<div *ngIf="movie">
+  <p>{{ movie.title }}</p>
+
+  <p>Numéro de l'episode : {{ movie.episode_id }}</p>
+
+  <p>Date de sortie : {{ movie.release_date }}</p>
+
+  <p>Directeur : {{ movie.director }}</p>
+
+  <p>{{ movie.opening_crawl }}</p>
+</div>

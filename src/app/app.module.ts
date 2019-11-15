@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { AppComponent } from './app.component';
 import { MovieSelectComponentComponent } from './movie-select-component/movie-select-component.component';
 import { MovieDetailsComponentComponent } from './movie-details-component/movie-details-component.component';
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MovieDetailsComponentComponent } from './movie-details-component/movie-
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
