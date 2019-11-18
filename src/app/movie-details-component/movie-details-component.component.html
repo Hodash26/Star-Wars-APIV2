@@ -10,6 +10,4 @@
   <p>Texte d'ouverture : {{ movie.opening_crawl }}</p>
 </div>
 
-<!-- <div *ngIf="selectedPeople"> -->
-    <app-movie-characters-component [url]="movie.url" ></app-movie-characters-component>
-    <!-- </div> -->
+<app-movie-characters-component [url]="movie" ></app-movie-characters-component>
