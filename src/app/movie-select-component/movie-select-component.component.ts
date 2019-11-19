@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Movie } from '../movies';
 import { StarWarsService } from '../star-wars.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';

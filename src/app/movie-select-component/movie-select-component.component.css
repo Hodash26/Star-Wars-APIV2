@@ -1,3 +1,11 @@
 form {
     text-align: center;
 }
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    border-top: 3px dashed white;
+    padding-top: 15px;
+}

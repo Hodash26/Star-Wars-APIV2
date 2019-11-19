@@ -12,28 +12,33 @@ import { Character } from './characters'
 export class StarWarsService {
   private starwarsUrl = "https://swapi.co/api/"
   movie$: Observable<Movie[]>;
+  character$: Observable<Character[]>
 
   constructor(private readonly http: HttpClient) {}
 
   getStarWarsMovies(): Observable<Movie[]> {
     return this.http.get<Movie[]> (
-      this.starwarsUrl+ 'films/'
+      this.starwarsUrl+ "films/"
     )
     .pipe (
       map(
         data => data ['results']
       )
-    )
+    );
   }
 
   getStarWarsCharacters(): Observable<Character[]> {
     return this.http.get<Character[]> (
-      this.starwarsUrl+ 'people/'
+      this.starwarsUrl+"people/"
     )
     .pipe (
       map( 
         data => data ['results']
       )
-    )
+    );
+  }
+
+  getStarWarsCharacter(thisUrl : string): Observable<Character[]> {
+    return this.http.get<Character[]>(thisUrl);
   }
 }

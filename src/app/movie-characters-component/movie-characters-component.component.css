@@ -4,8 +4,10 @@ div {
     flex-wrap: wrap;
     border: solid 2px white;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 p {
     width: 250px;
+    font-size: 20px;
 }

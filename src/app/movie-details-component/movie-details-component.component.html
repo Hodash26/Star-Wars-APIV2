@@ -8,6 +8,13 @@
   <p>Réalisateur : {{ movie.director }}</p>
 
   <p>Texte d'ouverture : {{ movie.opening_crawl }}</p>
+
+    <!-- <ul>
+        <li *ngFor="let character of movie.characters">{{ character }}</li>
+    </ul> -->
 </div>
 
-<app-movie-characters-component [url]="movie" ></app-movie-characters-component>
+<app-movie-characters-component
+  *ngFor="let selectedCharacter of movie?.characters"
+  [selectedCharacter]="selectedCharacter"
+></app-movie-characters-component>
