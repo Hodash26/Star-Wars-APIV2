@@ -7,14 +7,14 @@ import { AppComponent } from './app.component';
 import { MovieSelectComponentComponent } from './movie-select-component/movie-select-component.component';
 import { MovieDetailsComponentComponent } from './movie-details-component/movie-details-component.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MovieCharactersComponentComponent } from './movie-characters-component/movie-characters-component.component'
+import { MovieCharactersComponentComponent } from './movie-characters-component/movie-characters-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieSelectComponentComponent,
     MovieDetailsComponentComponent,
-    MovieCharactersComponentComponent
+    MovieCharactersComponentComponent,
   ],
   imports: [
     BrowserModule,
